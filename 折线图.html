@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="600" style="border:1px solid red"></canvas>
+</body>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.moveTo(50,50);
+    ctx.lineTo(50,500);
+    ctx.lineTo(600,500);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(50,50);
+    ctx.lineTo(47,60);
+    ctx.lineTo(53,60);
+    ctx.fillStyle="red";
+    ctx.fill();
+
+    ctx.beginPath();
+    //590 497, 590 503
+    ctx.moveTo(600,500);
+    ctx.lineTo(590,497);
+    ctx.lineTo(590,503);
+    ctx.fill();
+
+    //绘制文字：x，y，0
+    ctx.textAlign="right";
+    ctx.textBaseline="top";
+    ctx.font="20px Microsoft Yahei";
+    ctx.fillText("0",50,500);
+
+    ctx.fillText("x",600,500);
+
+    ctx.fillText("y",40,50);
+
+    //100,150
+    ctx.moveTo(150,350);
+    ctx.arc(150,350,5,0,Math.PI*2);
+    //绘制文字
+    ctx.textBaseline="bottom";
+    ctx.textAlign="right";
+    ctx.fillText("(100,150)",150,350);
+    ctx.fill();
+
+    //200,200
+    ctx.moveTo(250,300);
+    ctx.arc(250,300,5,0,Math.PI*2);
+    ctx.fillText("(200,200)",250,300);
+    ctx.fill();
+
+    //(300,100)
+    ctx.moveTo(350,400);
+    ctx.arc(350,400,5,0,Math.PI*2);
+    ctx.textBaseline="top";
+    ctx.textAlign="start";
+    ctx.fillText("(300,100)",350,400);
+    ctx.fill();
+
+    //(400,300)
+
+    ctx.moveTo(450,200);
+    ctx.arc(450,200,5,0,Math.PI*2);
+    ctx.textBaseline="bottom";
+    ctx.fillText("(400,300)",450,200);
+    ctx.fill();
+
+    //(500,200)
+
+    ctx.moveTo(550,300);
+    ctx.arc(550,300,5,0,Math.PI*2);
+    ctx.fillText("(500,200)",550,300);
+    ctx.fill();
+
+    //连线
+    ctx.moveTo(50,500);
+    ctx.lineTo(150,350);
+    ctx.lineTo(250,300);
+    ctx.lineTo(350,400);
+    ctx.lineTo(450,200);
+    ctx.lineTo(550,300);
+    ctx.strokeStyle="red";
+    ctx.stroke();
+
+
+    //作业：完善几个点：(300,100)、(400,300)、(500,200)
+
+</script>
+</html>

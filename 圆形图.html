@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 400px;
+			height: 400px;
+			margin: 0 auto;
+			border-radius: 50%;
+			overflow: hidden;
+			position: relative;
+		}
+		.box1{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -100px;
+			width: 0;
+			height: 0;
+			border-top-width: 200px;
+			border-left-width: 100px;
+			border-right-width: 100px;
+			border-style: solid;
+			border-color: transparent;
+			border-top-color: blue;
+		}
+		.box2{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -150px;
+			width: 0;
+			height: 0;
+			border-top-width: 200px;
+			border-left-width: 150px;
+			border-right-width: 150px;
+			border-style: solid;
+			border-color: transparent;
+			border-top-color: red;
+			transform-origin: bottom;
+			transform: rotate(65deg);
+		}
+		.box3{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -120px;
+			width: 0;
+			height: 0;
+			border-top-width: 200px;
+			border-left-width: 120px;
+			border-right-width: 120px;
+			border-style: solid;
+			border-color: transparent;
+			border-top-color: orange;
+			transform-origin: bottom;
+			transform: rotate(140deg);
+		}
+		.box4{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -90px;
+			width: 0;
+			height: 0;
+			border-top-width: 200px;
+			border-left-width: 90px;
+			border-right-width: 90px;
+			border-style: solid;
+			border-color: transparent;
+			border-top-color: purple;
+			transform-origin: bottom;
+			transform: rotate(200deg);
+		}
+		.box5{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -180px;
+			width: 0;
+			height: 0;
+			border-top-width: 200px;
+			border-left-width: 180px;
+			border-right-width: 180px;
+			border-style: solid;
+			border-color: transparent;
+			border-top-color: #FFAEC9;
+			transform-origin: bottom;
+			transform: rotate(-80deg);
+		}
+		.box6{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -110px;
+			margin-top: -110px;
+			width: 220px;
+			height: 220px;
+			background-color: #fff;
+			border-radius: 50%;
+			z-index: 10;
+		}
+		.pillar5{
+			position: absolute;
+			top: -2%;
+			left: 50%;
+			margin-left: -20px;
+			height: 200px;
+			width: 40px;
+			background-color: #fff;
+			z-index: 1;
+			transform-origin: bottom;
+			transform: rotate(-34deg);
+		}
+		.pillar4{
+			position: absolute;
+			top: -2%;
+			left: 50%;
+			margin-left: -20px;
+			height: 200px;
+			width: 40px;
+			background-color: #fff;
+			z-index: 1;
+			transform-origin: bottom;
+			transform: rotate(-130deg);
+		}
+		.pillar3{
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			margin-left: -20px;
+			height: 200px;
+			width: 40px;
+			background-color: #fff;
+			z-index: 1;
+			transform-origin: bottom;
+			transform: rotate(174deg);
+		}
+		.pillar2{
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			margin-left: -20px;
+			height: 200px;
+			width: 40px;
+			background-color: #fff;
+			z-index: 1;
+			transform-origin: bottom center;
+			transform: rotate(108deg);
+		}
+		.pillar1{
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			margin-left: -20px;
+			height: 200px;
+			width: 40px;
+			background-color: #fff;
+			z-index: 1;
+			transform-origin: bottom;
+			transform: rotate(28deg);
+		}
+		
+		
+	</style>
+</head>
+<body>
+<div class="box">
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+	<div class="box6"></div>
+	<div class="pillar1"></div>
+	<div class="pillar2"></div>
+	<div class="pillar3"></div>
+	<div class="pillar4"></div>
+	<div class="pillar5"></div>
+</div>
+	
+</body>
+</html>
